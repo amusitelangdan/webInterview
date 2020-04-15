@@ -1,7 +1,7 @@
 var array1 = [1, 2, 3, 1, 2, 3, '1', '2', '3','1', '2', '3'];
 var array4 = [1, 2, 3, '1', '2', '3', 'a', 'A'];
 var array2 = [1, 2, '1', 2, 1];
-var array3 = [1, 1, '1', 2, 2];
+var array3 = [1, 1, '1', 2, 2]
 
 function unique1(array) {
     let res = [];
