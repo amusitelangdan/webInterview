@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>正则表达式</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        let value = 'The fat cat sat on the mat.';
+        let reg1 = /mat/g
+        console.log(reg1.test(value))
+        // 点运算符 .是元字符中最简单的例子。 . 匹配任意单个自负，但不匹配换行符
+        let reg2 = /.at/g // 匹配一个任意自负后面跟着a和r的字符串
+        console.log(value.match(reg2))
+        // 字符集： 方括号用来指定一个字腹肌。在方括号中使用连字符来指定字符集的返回。在方括号中的字符集不关心顺序
+        let value1 = 'The car parked in the garage.'
+        let reg3 = /[tTCc][arhe]/g;
+        console.log(value1.match(reg3))
+    </script>
+</body>
+</html>
